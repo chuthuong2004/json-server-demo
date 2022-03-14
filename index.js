@@ -16,7 +16,7 @@ dotenv.config();
 
 
 const app = express();
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 const URI = process.env.MONGO_DB;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true, limit: '30mb' }));
