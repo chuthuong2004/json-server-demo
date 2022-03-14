@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true, limit: '30mb' }));
 app.use(cors());
 app.use(morgan('common'));
-app.use('/courses', courses);
+app.use('/api/courses', courses);
 mongoose.connect(URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
